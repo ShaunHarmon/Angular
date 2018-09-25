@@ -28,8 +28,6 @@
             
             </style>
             
-
-        
             <body>
             <app-root></app-root>
             <script type="text/javascript" src="https://raw.githubusercontent.com/ShaunHarmon/Angular/master/quoteGadget/dist/quoteGadget/runtime.js"></script>
