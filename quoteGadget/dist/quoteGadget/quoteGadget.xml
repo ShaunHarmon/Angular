@@ -32,9 +32,9 @@
         
             <body>
             <app-root></app-root>
-            <script type="text/javascript" src="https://raw.githubusercontent.com/ShaunHarmon/Angular/master/quoteGadget/dist/quoteGadget/runtime.js"></script>
-            <script type="text/javascript" src="https://raw.githubusercontent.com/ShaunHarmon/Angular/master/quoteGadget/dist/quoteGadget/polyfills.js"></script>
-            <script type="text/javascript" src="https://raw.githubusercontent.com/ShaunHarmon/Angular/master/quoteGadget/dist/quoteGadget/main.js"></script>
+            <script type="text/javascript" src="https://rawgit.com/ShaunHarmon/Angular/master/quoteGadget/dist/quoteGadget/runtime.js"></script>
+            <script type="text/javascript" src="https://rawgit.com/ShaunHarmon/Angular/master/quoteGadget/dist/quoteGadget/polyfills.js"></script>
+            <script type="text/javascript" src="https://rawgit.com/ShaunHarmon/Angular/master/quoteGadget/dist/quoteGadget/main.js"></script>
             </body>
         ]]>
     </Content>
