@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module> 
     <ModulePrefs title="RevelDigital Quotes" description="Display quotes" author="RevelDigital" background="transparent">
-    <UserPref name="rdW" display_name="Width" required="true" default_value="280" datatype="hidden" />
-    <UserPref name="rdH" display_name="Height" required="true" default_value="190" datatype="hidden" />
+        <UserPref name="rdW" display_name="Width" required="true" default_value="280" datatype="hidden" />
+        <UserPref name="rdH" display_name="Height" required="true" default_value="190" datatype="hidden" />
     </ModulePrefs>
     <Content type="html">
         <![CDATA[
+
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/ShaunHarmon/Angular/master/quoteGadget/dist/quoteGadget/styles.css">
             <style type="text/css">
 
                 #container{
@@ -32,10 +34,8 @@
             <app-root></app-root>
             <script type="text/javascript" src="https://raw.githubusercontent.com/ShaunHarmon/Angular/master/quoteGadget/dist/quoteGadget/runtime.js"></script>
             <script type="text/javascript" src="https://raw.githubusercontent.com/ShaunHarmon/Angular/master/quoteGadget/dist/quoteGadget/polyfills.js"></script>
-            S
             <script type="text/javascript" src="https://raw.githubusercontent.com/ShaunHarmon/Angular/master/quoteGadget/dist/quoteGadget/main.js"></script>
             </body>
-            </html>
         ]]>
     </Content>
 </Module>
