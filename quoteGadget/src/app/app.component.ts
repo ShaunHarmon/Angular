@@ -8,29 +8,31 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'quoteGadget';
-  qouteList = []
-  randomNum = -1;
-  constructor(private http: HttpClient){
-    this.http.get('https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=10').subscribe((response:any)=>{  
+    title = 'quoteGadget';
+    qouteList = []
     
-    this.randomNum = this.getRndInteger(0, response.length)
-    this.qouteList = response;
-      console.log(this.qouteList)
-      setInterval(()=>{
-        if(this.qouteList.length>0){
-          this.randomNum = this.getRndInteger(0, this.qouteList.length)
-        }
-      },10*1000);
-    });
+    
+    randomNum = -1;
+    constructor(private http: HttpClient){
+      this.http.get('https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=10').subscribe((response:any)=>{  
+   
+      this.randomNum = this.getRndInteger(0, response.length)
+      this.qouteList = response;
+        console.log(typeof(this.qouteList['title']), this.qouteList);
+        setInterval(()=>{
+          if(this.qouteList.length>0){
+            this.randomNum = this.getRndInteger(0, this.qouteList.length)
+          }
+        },10*1000);
+      });
+    }
 
+    stripTags(str){
+      return str.replace(/<[^>]*>/gi, "");
+    }
 
-  }
-
-  getRndInteger(min, max) {
-    return Math.floor(Math.random() * (max - min) ) + min;
+    getRndInteger(min, max) {
+      return Math.floor(Math.random() * (max - min) ) + min;
+    }
 }
 
-
-
-}

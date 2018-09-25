@@ -1,3 +1,4 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<h3 *ngIf="qouteList.length>0">{{qouteList[randomNum].content}}</h3>
-<p *ngIf="qouteList.length>0">{{qouteList[randomNum].title}}</p>
+<h3 *ngIf="qouteList.length>0" [innerHTML]="stripTags(qouteList[randomNum].content)"></h3>
+<p *ngIf="qouteList.length>0" [innerHTML]="stripTags(qouteList[randomNum].title)"></p>
+
