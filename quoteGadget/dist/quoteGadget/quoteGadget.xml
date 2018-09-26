@@ -30,9 +30,9 @@
             
             <body>
             <app-root></app-root>
-            <script  src="https://github.com/Angular/quoteGadget/dist/quoteGadget/runtime.js" type="text/javascript"></script>
+            <script  src="raw.githubusercontent.com/Angular/quoteGadget/dist/quoteGadget/runtime.js" type="text/javascript"></script>
             <script  src="https://raw.githubusercontent.com/ShaunHarmon/Angular/master/quoteGadget/dist/quoteGadget/polyfills.js" type="text/javascript"></script>
-            <script  src="https://github.com/Angular/quoteGadget/dist/quoteGadget/main.js" type="text/javascript"></script>
+            <script  src="raw.githubusercontent.com/Angular/quoteGadget/dist/quoteGadget/main.js" type="text/javascript"></script>
             </body>
         ]]>
     </Content>
