@@ -7,7 +7,7 @@
     <Content type="html">
         <![CDATA[
 
-            <link rel="stylesheet" href="https://raw.githubusercontent.com/ShaunHarmon/Angular/master/quoteGadget/dist/quoteGadget/styles.css">
+            
             <style type="text/css">
 
                 #container{
