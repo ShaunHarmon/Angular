@@ -14,11 +14,11 @@ export class AppComponent {
     
     randomNum = -1;
     constructor(private http: HttpClient){
-      this.http.get('https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=10').subscribe((response:any)=>{  
+      this.http.get('https://www.forbes.com/forbesapi/thought/get.json?limit=5&start=10&stream=true').subscribe((response:any)=>{  
    
       this.randomNum = this.getRndInteger(0, response.length)
       this.qouteList = response;
-        console.log(typeof(this.qouteList['title']), this.qouteList);
+        console.log(this.qouteList);
         setInterval(()=>{
           if(this.qouteList.length>0){
             this.randomNum = this.getRndInteger(0, this.qouteList.length)
